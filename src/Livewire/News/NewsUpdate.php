@@ -4,7 +4,8 @@ namespace Darvis\ModuleNews\Livewire\News;
 
 use Flux\Flux;
 use Darvis\ModuleNews\Models\News;
-use Manta\Models\Newscatjoin;
+use Darvis\ModuleNews\Models\Newscatjoin;
+
 use Darvis\Manta\Traits\MantaTrait;
 use Illuminate\Http\Request;
 use Livewire\Component;
