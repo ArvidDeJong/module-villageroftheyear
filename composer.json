@@ -1,5 +1,5 @@
 {
-    "name": "darvis/module-villageroftheyear",
+    "name": "darvis/module-news",
     "description": "Villager of the year module voor het Manta CMS voor Laravel",
     "type": "library",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "laravel",
         "manta",
         "cms",
-        "villageroftheyear",
+        "news",
         "livewire"
     ],
     "authors": [
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Darvis\\ModuleVillageroftheyear\\": "src/"
+            "Darvis\\ModuleNews\\": "src/"
         },
         "files": [
             "src/Helpers/helper.php"
@@ -40,13 +40,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Darvis\\ModuleVillageroftheyear\\Tests\\": "tests"
+            "Darvis\\ModuleNews\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Darvis\\ModuleVillageroftheyear\\VillageroftheyearServiceProvider"
+                "Darvis\\ModuleNews\\NewsServiceProvider"
             ]
         }
     },

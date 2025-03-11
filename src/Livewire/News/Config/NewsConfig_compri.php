@@ -1,0 +1,121 @@
+<?php
+
+return [
+    "module_name" => [
+        "single" => "Nieuws",
+        "multiple" => "Nieuws"
+    ],
+    "fields" => [
+        "uploads" => [
+            "active" => true,
+            "type" => "",
+            "title" => "Uploads",
+            "read" => false,
+            "required" => false,
+            "edit" => false,
+        ],
+        "locale" => [
+            "active" => true,
+            "type" => "text",
+            "title" => "Taal",
+            "read" => true,
+            "required" => false,
+            "edit" => false,
+        ],
+        "chatgpt" => [
+            "active" => true,
+            "type" => "",
+            "title" => "ChatGPT",
+            "read" => false,
+            "required" => false,
+            "edit" => false,
+        ],
+        "newscat" => [
+            "active" => false,
+            "type" => "checklist",
+            "title" => "Categorieën",
+            "options" => [],
+            "read" => true,
+            "value" => null,
+            "edit" => false,
+        ],
+        "author" => [
+            "active" => false,
+            "type" => "text",
+            "title" => "Auteur",
+            "read" => true,
+            "edit" => false,
+        ],
+        "title" => [
+            "active" => true,
+            "type" => "text",
+            "title" => "Titel",
+            "read" => true,
+            "edit" => true,
+        ],
+        "title_2" => [
+            "active" => false,
+            "type" => "text",
+            "title" => "Titel 2",
+            "read" => true,
+            "edit" => false,
+        ],
+        "title_3" => [
+            "active" => false,
+            "type" => "text",
+            "title" => "Titel 3",
+            "read" => true,
+            "edit" => false,
+        ],
+        "slug" => [
+            "active" => false,
+            "type" => "text",
+            "title" => "Slug",
+            "required" => true,
+            "read" => true,
+            "edit" => false,
+        ],
+        "seo_title" => [
+            "active" => false,
+            "type" => "text",
+            "title" => "SEO Titel",
+            "read" => true,
+            "edit" => false,
+        ],
+        "seo_description" => [
+            "active" => false,
+            "type" => "textarea",
+            "title" => "SEO Omschrijving",
+            "read" => true,
+            "edit" => false,
+        ],
+        "tags" => [
+            "active" => false,
+            "type" => "textarea",
+            "title" => "Tags",
+            "read" => true,
+            "edit" => false,
+        ],
+        "summary" => [
+            "active" => false,
+            "type" => "textarea",
+            "title" => "Opsomming",
+            "read" => true,
+            "edit" => false,
+        ],
+        "excerpt" => [
+            "active" => true,
+            "type" => "textarea",
+            "title" => "Inleiding",
+            "read" => true,
+            "edit" => true,
+        ],
+        "content" => [
+            "active" => true,
+            "type" => "editor",
+            "title" => "Content",
+            "read" => true,
+            "edit" => true,
+        ],
+    ]
+];
