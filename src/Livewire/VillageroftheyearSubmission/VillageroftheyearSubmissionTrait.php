@@ -12,8 +12,8 @@ trait VillageroftheyearSubmissionTrait
 {
     public function __construct()
     {
-        $this->route_name = 'villageroftheyearsubmission';
-        $this->route_list = route('villageroftheyearsubmission.list');
+        $this->route_name = 'villageroftheyearSubmission';
+        $this->route_list = route('villageroftheyearSubmission.list');
         $this->config = module_config('VillageroftheyearSubmission');
         $this->fields = $this->config['fields'];
         $this->tab_title = isset($this->config['tab_title']) ? $this->config['tab_title'] : null;

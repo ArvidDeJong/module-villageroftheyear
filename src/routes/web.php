@@ -20,12 +20,12 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth:staff', 'web']], functio
     Route::get("/{$name}/bestanden/{villageroftheyear}", \Darvis\ModuleVillageroftheyear\Livewire\Villageroftheyear\VillageroftheyearUpload::class)->name('villageroftheyear.upload');
     Route::get("/{$name}/instellingen", \Darvis\ModuleVillageroftheyear\Livewire\Villageroftheyear\VillageroftheyearSettings::class)->name('villageroftheyear.settings');
 
-    $moduleConfig = $modules->firstWhere("name", 'villageroftheyearsubmission');
-    $name = isset($moduleConfig['routename']) ? $moduleConfig['routename'] : 'villageroftheyearsubmission';
-    Route::get("/{$name}", VillageroftheyearSubmissionList::class)->name('villageroftheyearsubmission.list');
-    Route::get("/{$name}/toevoegen", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionCreate::class)->name('villageroftheyearsubmission.create');
-    Route::get("/{$name}/aanpassen/{villageroftheyearsubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionUpdate::class)->name('villageroftheyearsubmission.update');
-    Route::get("/{$name}/lezen/{villageroftheyearsubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionRead::class)->name('villageroftheyearsubmission.read');
-    Route::get("/{$name}/bestanden/{villageroftheyearsubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionUpload::class)->name('villageroftheyearsubmission.upload');
-    Route::get("/{$name}/instellingen", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionSettings::class)->name('villageroftheyearsubmission.settings');
+    $moduleConfig = $modules->firstWhere("name", 'villageroftheyearSubmission');
+    $name = isset($moduleConfig['routename']) ? $moduleConfig['routename'] : 'villageroftheyearSubmission';
+    Route::get("/{$name}", VillageroftheyearSubmissionList::class)->name('villageroftheyearSubmission.list');
+    Route::get("/{$name}/toevoegen", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionCreate::class)->name('villageroftheyearSubmission.create');
+    Route::get("/{$name}/aanpassen/{villageroftheyearSubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionUpdate::class)->name('villageroftheyearSubmission.update');
+    Route::get("/{$name}/lezen/{villageroftheyearSubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionRead::class)->name('villageroftheyearSubmission.read');
+    Route::get("/{$name}/bestanden/{villageroftheyearSubmission}", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionUpload::class)->name('villageroftheyearSubmission.upload');
+    Route::get("/{$name}/instellingen", \Darvis\ModuleVillageroftheyear\Livewire\VillageroftheyearSubmission\VillageroftheyearSubmissionSettings::class)->name('villageroftheyearSubmission.settings');
 });

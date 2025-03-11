@@ -43,6 +43,7 @@ class VillageroftheyearSubmissionUpdate extends Component
         $this->getBreadcrumb('update');
         $this->getTablist();
     }
+
     public function render()
     {
         return view('manta::default.manta-default-update')->title($this->config['module_name']['single'] . ' aanpassen');

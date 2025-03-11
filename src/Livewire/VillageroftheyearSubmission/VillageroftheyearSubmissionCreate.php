@@ -55,7 +55,7 @@ class VillageroftheyearSubmissionCreate extends Component
     }
     public function render()
     {
-        return view('module-villageroftheyear::livewire.villageroftheyear-submission.villageroftheyear-submission-create')->title('Dorper van het jaar inzending toevoegen');
+        return view('manta::default.manta-default-create')->title('Dorper van het jaar inzending toevoegen');
     }
 
 
