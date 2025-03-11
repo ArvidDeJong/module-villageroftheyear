@@ -1,6 +1,6 @@
 <?php
 
-namespace Manta\Models;
+namespace Darvis\ModuleNews\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

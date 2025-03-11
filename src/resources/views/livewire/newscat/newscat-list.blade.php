@@ -25,7 +25,7 @@
         </flux:table.columns>
         <flux:table.rows id="draggable">
             @foreach ($items as $item)
-                <livewire:module-news.newscat.newscat-list-row :$fields :$item :route_name="$this->route_name" :$moduleClass
+                <livewire:module-news::newscat.newscat-list-row :$fields :$item :route_name="$this->route_name" :$moduleClass
                     :key="$item->id">
             @endforeach
         </flux:table.rows>

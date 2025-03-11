@@ -1,16 +1,3 @@
-<?php
-
-namespace Darvis\ModuleNews\Livewire\News;
-
-use Darvis\ModuleNews\Models\News;
-use Darvis\Manta\Traits\MantaPagerowTrait;
-
-new class extends \Livewire\Volt\Component {
-    public News $item;
-
-    use MantaPagerowTrait;
-};
-?>
 <flux:table.row data-id="{{ $item->id }}">
     @if ($this->fields['uploads']['active'])
         <flux:table.cell><x-manta.tables.image :item="$item->image" /></flux:table.cell>
